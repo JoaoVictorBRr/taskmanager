@@ -1,0 +1,196 @@
+@use './variables/colors';
+@use './variables/fonts';
+
+
+.createTaskContainer{
+    display: none;
+
+    flex-direction: column;
+    position: fixed;
+    z-index: 9998;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: colors.$third-color;
+    padding: 30px;
+    border-radius: 15px;
+}
+.divUm{
+    margin-bottom: 30px;
+}
+.divDois{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+
+}
+.divTres{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.divQuatro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divGroupItens{
+    background-color: colors.$second-color;
+    border-radius: 8px;
+    padding: 6px;
+    font-family: fonts.$principal-font;
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+}
+.divGroupItens input, .selectWorkspace{
+    border: solid 1px rgb(255, 255, 255);
+   
+}
+.ButtonClose{
+    background-color: colors.$sixth-color;
+    font-size: 16px;
+    color: colors.$second-color;
+    
+    width: 36px;
+    height: 36px;
+
+    border-radius: 100%;
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+.ButtonClose:hover{
+    transform: scale(1.1);
+}
+
+.labelTitulo , .labelDescricao{
+    font-size: 20px;
+    color: colors.$second-color;
+    font-family: fonts.$principal-font;
+
+}
+
+.inputTitulo{
+    height: 40px;
+    
+}
+
+.inputDescricao, .inputTitulo{
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 15px;
+    font-size: 18px;
+    font-family: fonts.$principal-font;
+    outline: none;
+
+}
+
+.item1 {
+    grid-row: 1;
+    grid-column: 1; 
+}
+
+.item2 {
+    grid-row: 1;
+    grid-column: 2; 
+}
+
+.item3 {
+    grid-row: 2;
+    grid-column: 1; 
+}
+
+.item4 {
+    grid-row: 2;
+    grid-column: 2; 
+}
+.tituloFluxo{
+    background-color: colors.$second-color;
+    border-radius: 8px;
+
+    font-family: fonts.$principal-font;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+
+    padding: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.divEtapaExecutor{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.divEtapa, .divExecutor{
+    padding: 14px;
+
+    display: flex;
+
+    background-color: colors.$second-color;
+    gap: 18px;
+
+    font-family: fonts.$principal-font;
+    font-weight: 600;
+}
+.divExecutor{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.divEtapa{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.divEtapa select, .divExecutor select{
+    border: solid 2px white;
+    font-size: 16px;
+
+}
+
+.divBtnBackCreate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.ButtonNext, .btnSubmit, .btnVoltar{
+    font-size: 18px;
+    font-family: fonts.$principal-font;
+    font-size: 18px;
+    font-weight: 600;
+
+    color: colors.$second-color;
+    border-radius: 6px;
+    border: none;
+
+    margin-top: 20px;
+    padding: 15px;
+    
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.btnSubmit{
+    background-color: colors.$seventh-color;
+}
+.btnVoltar{
+    background-color: colors.$eight-color;
+}
+.ButtonNext{
+    background-color: colors.$seventh-color;
+ 
+}
+.btnVoltar:hover, .btnSubmit:hover, .ButtonNext:hover{
+    transform: scale(1.1);
+}

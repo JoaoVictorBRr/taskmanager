@@ -1,0 +1,295 @@
+@use './variables/colors';
+@use './variables/fonts';
+
+.btn-add-taks{
+    font-size: 80px;
+    color: colors.$principal-color;
+
+    position: fixed;
+
+    top: 230px;
+    left: 35px;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+    
+}
+
+.btn-add-taks:hover{
+    transform: scale(1.1);
+}
+
+
+.filtro{
+    font-family: fonts.$principal-font;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+
+    background-color: #769FBD;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+    padding: 10px;
+
+    width: 45%;
+
+    margin: 15px auto;
+
+    border-radius: 10px;
+
+}
+
+.filtro div{
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.filter-item{
+
+    font-size: 15px;
+
+    background-color: colors.$second-color;
+    border: colors.$second-color 1px solid;
+
+    padding: 10px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+}
+
+
+.btn-filter{
+    background-color: colors.$second-color;
+    border: none;
+
+    width: 80px;
+    height: 30px;
+
+    border-radius: 4px;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+.btn-filter:hover{
+    transform: scale(1.1);
+}
+
+.task-container{
+    font-family: fonts.$principal-font;
+
+    background-color: colors.$fourth-color;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    margin: 60px auto;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    cursor: pointer;
+}
+.task-container div{
+    width: 100%;
+}
+
+.task-title{
+    font-size: 22px;
+    color: colors.$principal-color;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+    margin-left: 1.6%;
+}
+
+.task-main-content{
+
+    display: flex;
+    gap: 50px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.taks-img-itens{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+.task-workspace, .task-responsible, .task-stage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.task-time-start{
+    background-color: colors.$seventh-color;
+    padding: 15px;
+    border-radius: 10px;
+    color: colors.$second-color;
+    font-weight: 500;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.task-time-end{
+    background-color: colors.$seventh-color;
+    padding: 15px;
+    border-radius: 10px;
+    color: colors.$second-color;
+    font-weight: 500;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.task-title-itens{
+    font-size: 20px;
+    font-weight: 700;
+
+    color: colors.$ninht-color;
+}
+.task-type-itens{
+    font-size: 18px;
+    font-weight: 500;
+
+    color: colors.$third-color;
+}
+.task-time-foreseen{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.task-progress-bar{
+    background-color: red;
+    border-radius: 4px;
+    width: 6%;
+    position: absolute;
+    margin-top: 5px;
+}
+.task-progress-bar-static{
+    background-color: colors.$second-color;
+    border: solid 1px white;
+    border-radius: 4px;
+
+}
+
+.task-container-open{
+
+    font-family: fonts.$principal-font;
+    background-color: #EFEFEF;
+
+    height: 100vh;
+
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    right: -80rem;
+
+    transition: 0.2s;
+
+}
+.task-arrow-back{
+   font-size: 35px;
+   cursor: pointer;
+   font-weight: 800;
+}
+.task-details{
+    padding: 20px;
+}
+.task-description{
+    color: colors.$second-color;
+    background-color: colors.$principal-color;
+    padding: 40px 20px 40px 20px; 
+   
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+.task-flow{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color:  colors.$principal-color;
+
+    padding: 40px;
+    color: colors.$second-color;
+
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.taks-img-flow{
+    border-radius: 100%;
+    width: 50px;
+}
+.task-flow-stage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.task-flow-arrows{
+    font-size: 24px;
+}
+
+.task-flow-description{
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.task-flow-description div{
+    display: flex;
+    flex-direction: column;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9988;
+}
+

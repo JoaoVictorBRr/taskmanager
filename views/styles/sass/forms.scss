@@ -1,0 +1,134 @@
+@use './variables/colors';
+@use './variables/fonts';
+
+.sectionForms{
+    display: flex;
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+
+    margin-top: 60px;
+}
+
+.form{
+    background-color: colors.$ninht-color;
+    border-radius: 15px;
+
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    font-family: fonts.$principal-font;
+    
+}
+.form div{
+    display: flex;
+}
+
+.form div label{
+
+    color: colors.$second-color;
+    background-color: colors.$principal-color;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    padding: 10px;
+
+    width: 55%;
+}
+
+.form div input, .form div select{
+
+    
+    background-color: colors.$second-color;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    padding: 10px;
+
+    border: none;
+    outline: none;
+}
+.btnSubmitForm{
+   margin: 0 auto;
+}
+.submit{
+    font-family: fonts.$principal-font;
+    font-size: 18px;
+    font-weight: 600;
+
+    width: 120px;
+
+    background-color: colors.$seventh-color;
+    color: colors.$second-color;
+    border-radius: 6px;
+    border: none;
+
+    margin-top: 20px;
+    padding: 10px;
+    
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.submit:hover{
+    transform: scale(1.1);
+}
+.containerItems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: colors.$third-color;
+    padding: 14px;
+    border-radius: 10px;
+
+    & p {
+        color: colors.$second-color;
+        font-family: fonts.$principal-font;
+        font-weight: 600;
+    }
+    & img{
+        width: 60px;
+        border-radius: 100%;
+    }
+    & button{
+        font-family: fonts.$principal-font;
+        font-size: 15px;
+        font-weight: 600;
+    
+        width: 100px;
+    
+        color: colors.$second-color;
+        border-radius: 6px;
+        border: none;
+    
+        padding: 10px;
+        
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    & button:hover{
+        transform: scale(1.1);
+    }
+}
+
+.mensagemFormUser-password, .mensagemFormUser-user, .mensagemFormUser-sucesso{
+    color: rgb(255, 255, 255);
+}
+
+.buttonExcluir{
+    background-color: colors.$sixth-color;
+}
+
+.buttonEdit{
+    background-color: colors.$ninht-color;
+}

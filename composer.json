@@ -1,0 +1,32 @@
+{
+    "name": "joaovictorbrr/taskmanager",
+    "description": "Esse projeto tem a ideia de ser um gerenciador de tarefas para equipes de developer - Projeto para estudo MVC",
+    "license": "MIT",
+    "minimum-stability": "stable",
+
+    "authors": [
+        {
+            "name":"João",
+            "email": "jvictor.oliv2000@gmail.com",
+            "role": " Developer",
+            "homepage": "http://taskmanager.com.br"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "src/"
+        },
+        "files": [
+            "src/Connection.php"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9.1",
+        "coffeecode/datalayer": "2.0.*",
+        "coffeecode/router": "1.0.*",
+        "league/plates": "3.*"
+    }
+}

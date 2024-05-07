@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #101744;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.name-system {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: Inter;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Inter;
+  color: white;
+}
+
+.user-img {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+}
+
+.user-name {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.user-name:hover {
+  color: #4278AA;
+}
+
+.option-div {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  background-color: #253042;
+  padding: 15px;
+  border-radius: 15px;
+  top: 160px;
+  right: 20px;
+}
+
+.option-link {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-add-taks {
+  font-size: 80px;
+  color: #101744;
+  position: fixed;
+  top: 230px;
+  left: 35px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-add-taks:hover {
+  transform: scale(1.1);
+}
+
+.filtro {
+  font-family: Inter;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #769FBD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 10px;
+  width: 45%;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.filtro div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-item {
+  font-size: 15px;
+  background-color: white;
+  border: white 1px solid;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-filter {
+  background-color: white;
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-filter:hover {
+  transform: scale(1.1);
+}
+
+.task-container {
+  font-family: Inter;
+  background-color: #D9D9D9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 60px auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.task-container div {
+  width: 100%;
+}
+
+.task-title {
+  font-size: 22px;
+  color: #101744;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 1.6%;
+}
+
+.task-main-content {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.taks-img-itens {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.task-workspace, .task-responsible, .task-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-time-start {
+  background-color: #2EBD56;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-time-end {
+  background-color: #2EBD56;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-title-itens {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2F4C78;
+}
+
+.task-type-itens {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4278AA;
+}
+
+.task-time-foreseen {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.task-progress-bar {
+  background-color: red;
+  border-radius: 4px;
+  width: 6%;
+  position: absolute;
+  margin-top: 5px;
+}
+
+.task-progress-bar-static {
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 4px;
+}
+
+.task-container-open {
+  font-family: Inter;
+  background-color: #EFEFEF;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  right: -80rem;
+  transition: 0.2s;
+}
+
+.task-arrow-back {
+  font-size: 35px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.task-details {
+  padding: 20px;
+}
+
+.task-description {
+  color: white;
+  background-color: #101744;
+  padding: 40px 20px 40px 20px;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.task-flow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #101744;
+  padding: 40px;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.taks-img-flow {
+  border-radius: 100%;
+  width: 50px;
+}
+
+.task-flow-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.task-flow-arrows {
+  font-size: 24px;
+}
+
+.task-flow-description {
+  display: flex;
+  gap: 20px;
+}
+
+.task-flow-description div {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9988;
+}
+
+.createTaskContainer {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 9998;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4278AA;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.divUm {
+  margin-bottom: 30px;
+}
+
+.divDois {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+}
+
+.divTres {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.divQuatro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divGroupItens {
+  background-color: white;
+  border-radius: 8px;
+  padding: 6px;
+  font-family: Inter;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+}
+
+.divGroupItens input, .selectWorkspace {
+  border: solid 1px rgb(255, 255, 255);
+}
+
+.ButtonClose {
+  background-color: #ea2828;
+  font-size: 16px;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ButtonClose:hover {
+  transform: scale(1.1);
+}
+
+.labelTitulo, .labelDescricao {
+  font-size: 20px;
+  color: white;
+  font-family: Inter;
+}
+
+.inputTitulo {
+  height: 40px;
+}
+
+.inputDescricao, .inputTitulo {
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 15px;
+  font-size: 18px;
+  font-family: Inter;
+  outline: none;
+}
+
+.item1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.item2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.item3 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.item4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.tituloFluxo {
+  background-color: white;
+  border-radius: 8px;
+  font-family: Inter;
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+  padding: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.divEtapaExecutor {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.divEtapa, .divExecutor {
+  padding: 14px;
+  display: flex;
+  background-color: white;
+  gap: 18px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.divExecutor {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.divEtapa {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.divEtapa select, .divExecutor select {
+  border: solid 2px white;
+  font-size: 16px;
+}
+
+.divBtnBackCreate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ButtonNext, .btnSubmit, .btnVoltar {
+  font-size: 18px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  margin-top: 20px;
+  padding: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btnSubmit {
+  background-color: #2EBD56;
+}
+
+.btnVoltar {
+  background-color: #FF891D;
+}
+
+.ButtonNext {
+  background-color: #2EBD56;
+}
+
+.btnVoltar:hover, .btnSubmit:hover, .ButtonNext:hover {
+  transform: scale(1.1);
+}
+
+.sectionForms {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.form {
+  background-color: #2F4C78;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Inter;
+}
+
+.form div {
+  display: flex;
+}
+
+.form div label {
+  color: white;
+  background-color: #101744;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 10px;
+  width: 55%;
+}
+
+.form div input, .form div select {
+  background-color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.btnSubmitForm {
+  margin: 0 auto;
+}
+
+.submit {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  width: 120px;
+  background-color: #2EBD56;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.submit:hover {
+  transform: scale(1.1);
+}
+
+.containerItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #4278AA;
+  padding: 14px;
+  border-radius: 10px;
+}
+.items p {
+  color: white;
+  font-family: Inter;
+  font-weight: 600;
+}
+.items img {
+  width: 60px;
+  border-radius: 100%;
+}
+.items button {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100px;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.items button:hover {
+  transform: scale(1.1);
+}
+
+.mensagemFormUser-password, .mensagemFormUser-user, .mensagemFormUser-sucesso {
+  color: rgb(255, 255, 255);
+}
+
+.buttonExcluir {
+  background-color: #ea2828;
+}
+
+.buttonEdit {
+  background-color: #2F4C78;
+}
+
+/*# sourceMappingURL=styles.css.map */

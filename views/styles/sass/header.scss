@@ -1,0 +1,79 @@
+@use './variables/colors';
+@use './variables/fonts';
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 40px;
+
+    background-color: colors.$principal-color;
+}
+header a{
+    text-decoration: none;
+}
+
+.name-system{
+    color: colors.$second-color;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: Inter;
+
+
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: fonts.$principal-font;
+    color: colors.$second-color;
+
+  
+}
+
+.user-img{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.user-name{
+    cursor: pointer;
+    transition: 0.2s;
+}
+.user-name:hover{
+    color: colors.$third-color;
+}
+
+.option-div{
+    position: absolute;
+    flex-direction: column;
+
+    display: flex;
+    gap: 10px;
+
+    background-color: colors.$fifth-color;
+    padding: 15px;
+    border-radius: 15px;
+
+    top: 160px;
+    right: 20px;
+
+
+    }
+.option-link{
+    
+    text-decoration: none;
+    color: colors.$second-color;
+}
